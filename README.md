@@ -2,7 +2,7 @@
 
 > Infinite scrolling ant design select component
 
-[![NPM](https://img.shields.io/npm/v/antd-select-infinte-scroll.svg)](https://www.npmjs.com/package/antd-select-infinte-scroll) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/antd-select-infinte-scroll.svg)](https://www.npmjs.com/package/antd-select-infinte-scroll) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [(https://api.travis-ci.org/mrinalraj/antd-select-infinte-scroll.svg?branch=master)]
 
 ## Install
 

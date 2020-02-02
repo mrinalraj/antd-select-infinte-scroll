@@ -40,7 +40,6 @@ export default class InfiniteScrollSelect extends Component {
 	render() {
 		const { loadMore, ...restProps } = this.props
 		const { data, loading } = this.state
-		const antIcon = <Icon type='loading' style={{ fontSize: 20 }} spin />
 		return (
 			<Select
 				{...restProps}
@@ -49,7 +48,7 @@ export default class InfiniteScrollSelect extends Component {
 					<div ref={this.dropdown} id='dropdown'>
 						{menu}
 						<div class='loader-loading-more'>
-							<Spin indicator={antIcon} spinning={loading} />
+							<Spin indicator={<Icon type='loading' style={{ fontSize: 20 }} spin />} spinning={loading} />
 						</div>
 					</div>
 				)}
