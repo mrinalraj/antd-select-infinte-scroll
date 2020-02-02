@@ -1,5 +1,29 @@
-# antd-select-infinite-scroll [![npm](https://img.shields.io/npm/dt/react-infinite-scroll-component.svg?style=flat-square)](https://www.npmjs.com/package/react-infinite-scroll-component) [![npm](https://img.shields.io/npm/v/react-infinite-scroll-component.svg?style=flat-square)](https://www.npmjs.com/package/react-infinite-scroll-component)
+# antd-select-infinte-scroll
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Infinite scrolling ant design select component
 
-A component to work with infinite data for _ant-design select component_
+[![NPM](https://img.shields.io/npm/v/antd-select-infinte-scroll.svg)](https://www.npmjs.com/package/antd-select-infinte-scroll) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## Install
+
+```bash
+npm install --save antd-select-infinte-scroll
+```
+
+## Usage
+
+```jsx
+import React, { Component } from 'react'
+
+import MyComponent from 'antd-select-infinte-scroll'
+
+class Example extends Component {
+	render() {
+		return <MyComponent />
+	}
+}
+```
+
+## License
+
+MIT © [mrinalraj](https://github.com/mrinalraj)
