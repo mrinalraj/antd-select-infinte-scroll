@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import InfiniteScrollSelect from './lib/InfiniteScrollSelect'
+import { getData } from './generateData'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+	state = {
+		data: [],
+		page: 1,
+	}
+
+	componentDidMount() {
+		this.getMoreData()
+	}
+
+	setloading = () => this.setState({ loadingData: true })
+
+	getMoreData = async _ => {
+		console.log('data fetch')
+		const data = await getData(this.state.page)
+		this.setState(prevState => ({
+			data: [...prevState.data, ...data],
+			page: prevState.page + 1,
+		}))
+	}
+
+	render() {
+		const { data, page } = this.state
+		return <InfiniteScrollSelect style={{ width: '400px' }} data={data} hasMore={page > 5 ? false : true} loadMore={this.getMoreData} />
+	}
 }
-
-export default App;
