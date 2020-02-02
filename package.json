@@ -1,8 +1,8 @@
 {
   "name": "antd-select-infinte-scroll",
-  "version": "0.4.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "version": "0.6.0",
+  "main": "dist/InfiniteScrollSelect.js",
+  "module": "dist/InfiniteScrollSelect.js",
   "files": [
     "dist",
     "README.md"
@@ -15,6 +15,8 @@
     "antd": "^3.26.7"
   },
   "scripts": {
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "test": "exit \"no test specified\"",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
@@ -40,6 +42,7 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-transform-react-jsx": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
+    "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1"
