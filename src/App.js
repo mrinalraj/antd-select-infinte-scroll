@@ -15,7 +15,6 @@ export default class App extends Component {
 	setloading = () => this.setState({ loadingData: true })
 
 	getMoreData = async _ => {
-		console.log('data fetch')
 		const data = await getData(this.state.page)
 		this.setState(prevState => ({
 			data: [...prevState.data, ...data],

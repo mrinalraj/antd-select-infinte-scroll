@@ -2,7 +2,7 @@
 
 > Infinite scrolling ant design select component
 
-[![NPM](https://img.shields.io/npm/v/antd-select-infinte-scroll.svg)](https://www.npmjs.com/package/antd-select-infinte-scroll) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![build](https://api.travis-ci.org/mrinalraj/antd-select-infinte-scroll.svg?branch=master)]()
+[![NPM](https://img.shields.io/npm/v/antd-select-infinte-scroll.svg)](https://www.npmjs.com/package/antd-select-infinte-scroll) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
@@ -23,6 +23,14 @@ class Example extends Component {
 	}
 }
 ```
+
+# props
+
+| name         | type               | required | default | description                                                                         |
+| ------------ | ------------------ | -------- | ------- | ----------------------------------------------------------------------------------- |
+| **data**     | array (of objects) | true     | []      | array of dropdown data, each element must be object with properties `{label,value}` |
+| **hasMore**  | boolean            | false    | false   | if true data loaded on scroll                                                       |
+| **loadMore** | function           | true     | null    | function to get next data, please manage page number in this function               |
 
 ## License
 

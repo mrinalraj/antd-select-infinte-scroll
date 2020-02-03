@@ -10,6 +10,8 @@
 
 # production
 /build
+/dist
+/bin
 
 # misc
 .DS_Store

@@ -47,7 +47,7 @@ export default class InfiniteScrollSelect extends Component {
 				dropdownRender={menu => (
 					<div ref={this.dropdown} id='dropdown'>
 						{menu}
-						<div class='loader-loading-more'>
+						<div className='loader-loading-more'>
 							<Spin indicator={<Icon type='loading' style={{ fontSize: 20 }} spin />} spinning={loading} />
 						</div>
 					</div>
