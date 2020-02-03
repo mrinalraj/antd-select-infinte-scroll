@@ -10,7 +10,7 @@ export default class InfiniteScrollSelect extends Component {
 	}
 
 	static propTypes = {
-		data: PropTypes.arrayOf(PropTypes.string).isRequired,
+		data: PropTypes.arrayOf(PropTypes.object).isRequired,
 		loadMore: PropTypes.func.isRequired,
 		hasMore: PropTypes.bool,
 	}
