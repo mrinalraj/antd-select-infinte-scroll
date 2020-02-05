@@ -53,8 +53,8 @@ export default class InfiniteScrollSelect extends Component {
 					</div>
 				)}
 			>
-				{data.map(({ label, value }, index) => (
-					<Select.Option id={index} key={value} value={value}>
+				{data.map(({ label, value, ...props }, index) => (
+					<Select.Option id={index} key={value} value={value} {...props}>
 						{label}
 					</Select.Option>
 				))}
